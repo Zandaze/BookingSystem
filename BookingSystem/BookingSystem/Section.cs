@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem
 {
-    class Book
+    class Section
     {
-        private string bookID { get; set; }
-        private string tItle { get; set; }
-        private string category { get; set; }
     }
 }

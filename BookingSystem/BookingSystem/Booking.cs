@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace BookingSystem
 {
-    class Book
+    class Booking
     {
-        private string bookID { get; set; }
-        private string tItle { get; set; }
-        private string category { get; set; }
+
+        public string bookId { get; set; }
+        public string bookedDate { get; set; }
+
     }
 }
