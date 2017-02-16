@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem
 {
-    class Customercs
+    class Customer
     {
     }
 }
