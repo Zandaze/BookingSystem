@@ -9,7 +9,7 @@ namespace BookingSystem
     class Book
     {
         private string bookID { get; set; }
-        private string tItle { get; set; }
+        private string title { get; set; }
         private string category { get; set; }
     }
 }
