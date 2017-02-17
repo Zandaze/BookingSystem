@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 namespace BookingSystem
 {
     class Rack
+
     {
+        private string  letters { get; set; }
+        private List<Shelf> shelves = new List<Shelf>();
+
+
     }
 }

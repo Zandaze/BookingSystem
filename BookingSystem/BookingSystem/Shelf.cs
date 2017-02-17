@@ -8,5 +8,10 @@ namespace BookingSystem
 {
     class Shelf
     {
+        private string id { get; set; }
+        private List<Book> books = new List<Book>();
+
+
+
     }
 }
