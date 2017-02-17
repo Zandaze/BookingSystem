@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BookingSystem
-{    class Customer
+{    
+  class Customer
 
     {
         private string pnr { get; set; }
