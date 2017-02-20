@@ -11,5 +11,7 @@ namespace BookingSystem
         private string id { get; set; }
         private string title { get; set; }
         private string category { get; set; }
+        private string year { get; set; }
+
     }
 }
