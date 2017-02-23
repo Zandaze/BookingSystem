@@ -9,10 +9,10 @@ namespace BookingSystem
   class Customer
 
     {
-        private string pnr { get; set; }
-        private string name { get; set; }
-        private string address { get; set; }
-        private string email { get; set; }
-        private string phone { get; set; }
+        public string pnr { get; private set; }
+        public string name { get; private set; }
+        public string address { get; private set; }
+        public string email { get; private set; }
+        public string phone { get; private set; }
    }
 }
