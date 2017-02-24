@@ -9,28 +9,39 @@ namespace BookingSystem
 {
    static class  TempController
     {
-        public static bool addBook(string id, string title, string author, string category, string year)
+
+        public static bool AddBook(string title, string author, string category, string year, string isbn)
         {
-            Book book = new Book(id,title,author,category,year);
-            
-            try
-            {
-                //TODO: send book to DAL. 
-                    return true;
-            }
-            catch (Exception e)
-            {
-                //Console output is temporary********
-                Console.WriteLine("Error Message: " + e.Source);
-                return false;
-            }
+            Book book = new Book(title, author, category, year, isbn);
+            DAL dal = new DAL();
+
+         if(dal.Add(book)) 
+            return true;
+
+         else
+            return false;
+
         }
 
-        public static bool deleteBook(string id)
+
+        public static bool DeleteBook(Book book)
+        {
+            DAL dal = new DAL();
+
+            if (dal.Delete(book))
+                return true;
+            else
+                return false;
+        }
+
+        public static bool UpdateBook(Object obj, string[] attributes, string[] data)
         {
             try
             {
-                //TODO: send id to DAL. 
+                for (int i = 0; i < attributes.Length; i++)
+                {
+                    //TODO: send parameters to DAL. Dictionary.   
+                }
                 return true;
             }
             catch (Exception e)
@@ -39,50 +50,21 @@ namespace BookingSystem
                 Console.WriteLine("Error Message: " + e.Source);
                 return false;
             }
-        }
-        public static List<Book> getBooks()
-        {
-            Book b1 = new Book("id3", "title3", "author3", "category3", "year3");
-            Book b2 = new Book("id4", "title4", "author4", "category4", "year4");
-            List<Book> b = new List<Book>();
-            b.Add(b1);
-            b.Add(b2);
-            //TODO: Get bookList from DAL
-
-            // and  return bookList;
-            return b;
-        }
-        public static List<Book> getBooks(string[] args)
-        {
-            Book b1 = new Book("id", "title", "author", "category", "year");
-            Book b2 = new Book("id2", "title2", "author2", "category2", "year2");
-            List<Book> b = new List<Book>();
-            //TODO: Get List of requested books
-            b.Add(b1);
-            b.Add(b2);
-            // and return requestedBooks;
-            return b;
-        }
-
-        public static void testing()
-        {
-            string[] s = { "a", "b", "c" };
-
-
             
-
-            foreach (Book book in getBooks()) 
-            {
-                Console.WriteLine("inuti getBooks()");
-                Console.WriteLine("{0}, {1}, {2}, {3}, {4}", book.id, book.title, book.author, book.category, book.year);
-            }
-
-            foreach (Book book in getBooks(s))
-            {
-                Console.WriteLine("inuti getBooks(s)");
-                Console.WriteLine(book.id + book.title + book.author + book.category + book.year);
-            }
-
         }
+
+        public static List<Book> GetAllBooks()
+        {
+            DAL dal = new DAL();
+            Book b = new Book();
+            List<Book> books = new List<Book>(dal.FindAll(new BookingSystem.Book()));
+            return books; 
+        } 
+
+        public static Book GetBook(string title)
+        {
+            
+        }
+    
     }
 }
