@@ -8,7 +8,7 @@ namespace BookingSystem
 {
     class Employee
     {
-        private string empId { get; set; }
+        private string id { get; set; }
         private string name { get; set; }
         private string address { get; set; }
         private string phone { get; set; }

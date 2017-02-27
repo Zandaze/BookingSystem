@@ -9,8 +9,10 @@ namespace BookingSystem
     class Booking
     {
 
-        public string id { get; set; }
-        public string bookedDate { get; set; }
-
+        private string id { get; set; }
+        private string bookedDate { get; set; }
+        private string returnDate { get; set; }
+        private List<Book> books = new List<Book>();
     }
+
 }
