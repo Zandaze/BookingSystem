@@ -44,7 +44,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -59,43 +58,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs">
-      <DependentUpon>BookingSystemEntityDataModel.tt</DependentUpon>
+      <DependentUpon>BookingSystemEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Booking.cs">
-      <DependentUpon>BookingSystemEntityDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BookingSystemEntityDataModel.Context.cs">
+    <Compile Include="Booking.cs" />
+    <Compile Include="BookingSystemEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BookingSystemEntityDataModel.Context.tt</DependentUpon>
+      <DependentUpon>BookingSystemEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookingSystemEntityDataModel.cs">
+    <Compile Include="BookingSystemEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BookingSystemEntityDataModel.tt</DependentUpon>
+      <DependentUpon>BookingSystemEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookingSystemEntityDataModel.Designer.cs">
+    <Compile Include="BookingSystemEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BookingSystemEntityDataModel.edmx</DependentUpon>
+      <DependentUpon>BookingSystemEntities.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>BookingSystemEntityDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Employee.cs">
-      <DependentUpon>BookingSystemEntityDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Customer.cs" />
+    <Compile Include="DAL.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Library.cs" />
     <Compile Include="Program.cs" />
@@ -103,11 +91,9 @@
     <Compile Include="Rack.cs" />
     <Compile Include="Section.cs" />
     <Compile Include="Shelf.cs" />
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="TempController.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,12 +104,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="BookingSystemEntityDataModel.edmx">
+    <EntityDeploy Include="BookingSystemEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BookingSystemEntityDataModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>BookingSystemEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="BookingSystemEntityDataModel.edmx.diagram">
-      <DependentUpon>BookingSystemEntityDataModel.edmx</DependentUpon>
+    <None Include="BookingSystemEntities.edmx.diagram">
+      <DependentUpon>BookingSystemEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -140,15 +126,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BookingSystemEntityDataModel.Context.tt">
+    <Content Include="BookingSystemEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BookingSystemEntityDataModel.edmx</DependentUpon>
-      <LastGenOutput>BookingSystemEntityDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>BookingSystemEntities.edmx</DependentUpon>
+      <LastGenOutput>BookingSystemEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="BookingSystemEntityDataModel.tt">
+    <Content Include="BookingSystemEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BookingSystemEntityDataModel.edmx</DependentUpon>
-      <LastGenOutput>BookingSystemEntityDataModel.cs</LastGenOutput>
+      <DependentUpon>BookingSystemEntities.edmx</DependentUpon>
+      <LastGenOutput>BookingSystemEntities.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

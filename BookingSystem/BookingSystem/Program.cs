@@ -14,6 +14,21 @@ namespace BookingSystem
         [STAThread]
         static void Main()
         {
+
+
+
+            TempController.AddBook("generic", "1", "2", "3", "4");
+            Console.WriteLine("done!");
+          //  TempController.DeleteBook();
+            Console.WriteLine("Removed!");
+
+            foreach (Book b in TempController.GetAllBooks())
+            {
+                Console.WriteLine(b.id);
+            }
+            
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //(new LoginForm()).Show();
