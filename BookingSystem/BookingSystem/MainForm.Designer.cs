@@ -36,6 +36,7 @@
             this.pnlListContainer = new System.Windows.Forms.Panel();
             this.lstResult = new System.Windows.Forms.ListBox();
             this.pnlBookings = new System.Windows.Forms.Panel();
+            this.btnBookingAddUpdate = new System.Windows.Forms.Button();
             this.lblBookedTo = new System.Windows.Forms.Label();
             this.lblBookingId = new System.Windows.Forms.Label();
             this.txtBookedTo = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.txtBookingId = new System.Windows.Forms.TextBox();
             this.lblBookedFrom = new System.Windows.Forms.Label();
             this.pnlBook = new System.Windows.Forms.Panel();
+            this.btnBookAddUpdate = new System.Windows.Forms.Button();
             this.lblBookId = new System.Windows.Forms.Label();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.lblYear = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.lblInfo = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnBookingAddUpdate = new System.Windows.Forms.Button();
-            this.btnBookAddUpdate = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlListContainer.SuspendLayout();
             this.pnlBookings.SuspendLayout();
@@ -161,6 +161,16 @@
             this.pnlBookings.TabIndex = 12;
             this.pnlBookings.Visible = false;
             // 
+            // btnBookingAddUpdate
+            // 
+            this.btnBookingAddUpdate.Location = new System.Drawing.Point(39, 160);
+            this.btnBookingAddUpdate.Name = "btnBookingAddUpdate";
+            this.btnBookingAddUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnBookingAddUpdate.TabIndex = 13;
+            this.btnBookingAddUpdate.Text = "Add/Update";
+            this.btnBookingAddUpdate.UseVisualStyleBackColor = true;
+            this.btnBookingAddUpdate.Click += new System.EventHandler(this.btnBookingAddUpdate_Click);
+            // 
             // lblBookedTo
             // 
             this.lblBookedTo.AutoSize = true;
@@ -225,6 +235,16 @@
             this.pnlBook.Size = new System.Drawing.Size(178, 316);
             this.pnlBook.TabIndex = 11;
             this.pnlBook.Visible = false;
+            // 
+            // btnBookAddUpdate
+            // 
+            this.btnBookAddUpdate.Location = new System.Drawing.Point(40, 202);
+            this.btnBookAddUpdate.Name = "btnBookAddUpdate";
+            this.btnBookAddUpdate.Size = new System.Drawing.Size(85, 25);
+            this.btnBookAddUpdate.TabIndex = 12;
+            this.btnBookAddUpdate.Text = "Add/Update";
+            this.btnBookAddUpdate.UseVisualStyleBackColor = true;
+            this.btnBookAddUpdate.Click += new System.EventHandler(this.btnBookAddUpdate_Click);
             // 
             // lblBookId
             // 
@@ -430,26 +450,6 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnBookingAddUpdate
-            // 
-            this.btnBookingAddUpdate.Location = new System.Drawing.Point(39, 160);
-            this.btnBookingAddUpdate.Name = "btnBookingAddUpdate";
-            this.btnBookingAddUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnBookingAddUpdate.TabIndex = 13;
-            this.btnBookingAddUpdate.Text = "Add/Update";
-            this.btnBookingAddUpdate.UseVisualStyleBackColor = true;
-            this.btnBookingAddUpdate.Click += new System.EventHandler(this.btnBookingAddUpdate_Click);
-            // 
-            // btnBookAddUpdate
-            // 
-            this.btnBookAddUpdate.Location = new System.Drawing.Point(40, 202);
-            this.btnBookAddUpdate.Name = "btnBookAddUpdate";
-            this.btnBookAddUpdate.Size = new System.Drawing.Size(85, 25);
-            this.btnBookAddUpdate.TabIndex = 12;
-            this.btnBookAddUpdate.Text = "Add/Update";
-            this.btnBookAddUpdate.UseVisualStyleBackColor = true;
-            this.btnBookAddUpdate.Click += new System.EventHandler(this.btnBookAddUpdate_Click);
             // 
             // MainForm
             // 
