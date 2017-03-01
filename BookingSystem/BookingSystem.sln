@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingSystem", "BookingSystem\BookingSystem.csproj", "{EF92D541-CA77-4CF9-800F-5B15BF16D109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramKonstruktion", "..\..\..\..\Documents\Visual Studio 2015\Projects\ProgramKonstruktion\ProgramKonstruktion\ProgramKonstruktion.csproj", "{93CC9A23-099F-464A-9FF8-E252D0D9FFC4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{EF92D541-CA77-4CF9-800F-5B15BF16D109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF92D541-CA77-4CF9-800F-5B15BF16D109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF92D541-CA77-4CF9-800F-5B15BF16D109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93CC9A23-099F-464A-9FF8-E252D0D9FFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93CC9A23-099F-464A-9FF8-E252D0D9FFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93CC9A23-099F-464A-9FF8-E252D0D9FFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93CC9A23-099F-464A-9FF8-E252D0D9FFC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
